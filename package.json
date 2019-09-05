@@ -1,0 +1,24 @@
+{
+  "name": "@oneisland/linter",
+  "private": false,
+  "version": "0.0.1",
+  "description": "A simple linter used for OneIsland projects",
+  "scripts": {
+    "postinstall": "./postinstall.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "homepage": "https://github.com/oneislandearth/linter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneislandearth/linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oneislandearth/linter/issues"
+  },
+  "author": "OneIsland Limited <team@oneisland.io>",
+  "license": "MIT"
+}
