@@ -14,7 +14,7 @@ const createLink = (file) => {
   const project = path.resolve(process.env.INIT_CWD, file);
 
   // Check that the file does not exists in the project folder
-  if (!fs.existsSync(package)) {
+  if (!fs.existsSync(project)) {
 
     // Create a symbolic link to the file in the project folder
     fs.symlinkSync(package, project);
