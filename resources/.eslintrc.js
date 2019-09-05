@@ -35,13 +35,18 @@ module.exports = {
     'block-spacing': 'error',
     'brace-style': 'error',
     'callback-return': 'off',
-    'camelcase': 'error',
+    'camelcase': [
+      'error',
+      {
+        'properties': 'never',
+        'ignoreDestructuring': true
+      }
+    ],
     'capitalized-comments': [
       'error',
       'always',
       {
-        "ignorePattern": "if|return|let|cont|(.*) =|(.*) {|(.*) }|(.*);",
-        'ignoreConsecutiveComments': true,
+        'ignoreConsecutiveComments': false,
         'ignoreInlineComments': true
       }
     ],

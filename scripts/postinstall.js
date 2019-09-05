@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-/* Post-install script for the linter */
-
-// Import the node modules
+// Import the required node modules
 const fs = require('fs');
 const path = require('path');
 
@@ -10,7 +8,7 @@ const path = require('path');
 const createLink = (file) => {
 
   // Resolve the paths for the file
-  const package = path.resolve(__dirname, file);
+  const package = path.resolve(__dirname, '../resources', file);
   const project = path.resolve(process.env.INIT_CWD, file);
 
   // Check that the file does not exists in the project folder

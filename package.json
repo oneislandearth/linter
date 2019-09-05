@@ -1,10 +1,10 @@
 {
   "name": "@oneisland/linter",
   "private": false,
-  "version": "0.0.2",
-  "description": "A simple linter used for OneIsland projects",
+  "version": "0.0.3",
+  "description": "The package which makes linting is as easy as installing a package",
   "scripts": {
-    "postinstall": "./postinstall.js"
+    "postinstall": "scripts/postinstall.js"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3",
@@ -19,6 +19,8 @@
   "bugs": {
     "url": "https://github.com/oneislandearth/linter/issues"
   },
-  "author": "OneIsland Limited <team@oneisland.io>",
+  "contributors": [
+    "Daniel Larkin <daniel@oneisland.io>"
+  ],
   "license": "MIT"
 }

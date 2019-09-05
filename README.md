@@ -6,16 +6,20 @@
 
 ***
 
-A simple linter used for OneIsland projects
-
-## Usage
-
-Simply install the package in the required project
-
-Linter will automatically create symbolic links to the required configuration files
+The package which makes linting is as easy as installing a package
 
 ## Installation
 
+[Linter](https://github.com/oneislandearth/linter) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/linter):
+
 ```bash
-npm install @oneisland/linter
+$ npm install @oneisland/linter
 ```
+
+## Usage
+
+Linter will automatically create symbolic links to the required configuration files to ensure your package is kept up to date.
+
+Linter follows and defines the code convention to be used within OneIsland.
+
+Built with support for Vue.js files.
