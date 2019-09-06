@@ -19,6 +19,28 @@ const createLink = (file) => {
   }
 }
 
-// Create the symbolic links to the files
-createLink('.eslintignore');
+// Copy a resource file to the project folder
+const copyResource = (filename, output = filename) => {
+
+  // Resolve the paths for the file
+  const package = path.resolve(__dirname, '../resources/', filename);
+  const project = path.resolve(process.env.INIT_CWD, output);
+
+  // Check that the file does not exists in the project folder
+  if (!fs.existsSync(project)) {
+
+    // Attempt to copy the file to the project folder
+    try { 
+
+      // Write the file to the project folder
+      fs.writeFileSync(project, fs.readFileSync(package));
+
+    } catch (e) {}
+  }
+}
+
+// Create the symbolic link to .eslintrc.js
 createLink('.eslintrc.js');
+
+// Copy the .eslintignore
+copyResource('.eslintignore');
