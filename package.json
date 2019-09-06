@@ -1,8 +1,13 @@
 {
   "name": "@oneisland/linter",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The package which makes linting is as easy as installing a package",
+  "keywords": [
+    "linter",
+    "eslint",
+    "oneisland"
+  ],
   "scripts": {
     "postinstall": "scripts/postinstall.js"
   },

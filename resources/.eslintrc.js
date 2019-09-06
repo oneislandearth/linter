@@ -50,7 +50,7 @@ module.exports = {
         'ignoreInlineComments': true
       }
     ],
-    'class-methods-use-this': 'error',
+    'class-methods-use-this': 'off',
     'comma-dangle': 'error',
     'comma-spacing': [
       'error',
@@ -227,7 +227,7 @@ module.exports = {
     'no-useless-catch': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-concat': 'error',
-    'no-useless-constructor': 'error',
+    'no-useless-constructor': 'off',
     'no-useless-rename': 'error',
     'no-useless-return': 'error',
     'no-var': 'error',

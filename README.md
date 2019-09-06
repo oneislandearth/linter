@@ -23,3 +23,9 @@ Linter will automatically create symbolic links to the required configuration fi
 Linter follows and defines the code convention to be used within OneIsland.
 
 Built with support for Vue.js files.
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2019-present, OneIsland Limited
