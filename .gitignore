@@ -1,2 +1,2 @@
-dist
+# Ignore the node modules
 node_modules
