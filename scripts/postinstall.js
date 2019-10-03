@@ -14,8 +14,13 @@ const createLink = (file) => {
   // Check that the file does not exists in the project folder
   if (!fs.existsSync(project)) {
 
-    // Create a symbolic link to the file in the project folder
-    fs.symlinkSync(package, project);
+    // Attempt to link the file to the project folder
+    try { 
+
+      // Create a symbolic link to the file in the project folder
+      fs.symlinkSync(package, project);
+      
+    } catch (e) {}
   }
 }
 

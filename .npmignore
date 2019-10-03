@@ -1,0 +1,2 @@
+# Ignore the development files when on NPM
+.travis.yml
