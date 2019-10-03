@@ -23,8 +23,6 @@ The package which makes linting is as easy as installing a package
 
 ## Installation
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/oneislandearth/linter.svg)](https://greenkeeper.io/)
-
 [Linter](https://github.com/oneislandearth/linter) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/linter):
 
 ```bash
