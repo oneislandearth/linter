@@ -24,10 +24,23 @@ module.exports = {
   },
   'rules': {
     'accessor-pairs': 'error',
-    'array-bracket-newline': 'error',
+    'array-bracket-newline': [
+      'error',
+      'always',
+      { 
+        'multiline': false, 
+        'minItems': 5
+      }
+    ],
     'array-bracket-spacing': 'error',
     'array-callback-return': 'off',
-    'array-element-newline': 'off',
+    'array-element-newline': [
+      'error',
+      { 
+        'multiline': true,
+        'minItems': 5
+      }
+    ],
     'arrow-body-style': 'error',
     'arrow-parens': 'off',
     'arrow-spacing': 'error',
@@ -46,7 +59,7 @@ module.exports = {
       'error',
       'always',
       {
-        'ignoreConsecutiveComments': false,
+        'ignoreConsecutiveComments': true,
         'ignoreInlineComments': true
       }
     ],
@@ -63,7 +76,7 @@ module.exports = {
       'error',
       'last'
     ],
-    'complexity': 'off',
+    'complexity': 'error',
     'computed-property-spacing': [
       'error',
       'never'
@@ -153,12 +166,6 @@ module.exports = {
     'no-div-regex': 'error',
     'no-duplicate-imports': 'error',
     'no-else-return': 'error',
-    'no-empty': [
-      'error', 
-      { 
-        'allowEmptyCatch': true 
-      }
-    ],
     'no-empty-function': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
@@ -167,7 +174,7 @@ module.exports = {
     'no-extra-label': 'error',
     'no-extra-parens': 'off',
     'no-floating-decimal': 'error',
-    'no-implicit-coercion': 'off',
+    'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
     'no-inline-comments': 'off',
@@ -190,7 +197,7 @@ module.exports = {
     'no-negated-condition': 'off',
     'no-negated-in-lhs': 'error',
     'no-nested-ternary': 'off',
-    'no-new': 'off',
+    'no-new': 'error',
     'no-new-func': 'error',
     'no-new-object': 'error',
     'no-new-require': 'error',
@@ -208,7 +215,7 @@ module.exports = {
     'no-restricted-modules': 'off',
     'no-restricted-properties': 'error',
     'no-restricted-syntax': 'error',
-    'no-return-assign': 'off',
+    'no-return-assign': 'error',
     'no-return-await': 'error',
     'no-script-url': 'error',
     'no-self-compare': 'error',
@@ -254,7 +261,7 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-destructuring': 'off',
-    'prefer-named-capture-group': 'off',
+    'prefer-named-capture-group': 'error',
     'prefer-numeric-literals': 'error',
     'prefer-object-spread': 'error',
     'prefer-promise-reject-errors': 'error',
@@ -274,7 +281,7 @@ module.exports = {
     'require-atomic-updates': 'error',
     'require-await': 'off',
     'require-jsdoc': 'off',
-    'require-unicode-regexp': 'off',
+    'require-unicode-regexp': 'error',
     'rest-spread-spacing': 'error',
     'semi': 'error',
     'semi-spacing': 'error',
