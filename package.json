@@ -1,7 +1,7 @@
 {
   "name": "@oneisland/linter",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The package which makes linting is as easy as installing a package",
   "keywords": [
     "linter",
