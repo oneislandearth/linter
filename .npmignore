@@ -1,2 +1,5 @@
 # Ignore the development files when on NPM
 .travis.yml
+
+# Ignore the resources if added to the root folder
+.eslint*

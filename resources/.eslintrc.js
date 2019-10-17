@@ -260,7 +260,7 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-destructuring': 'off',
-    'prefer-named-capture-group': 'error',
+    'prefer-named-capture-group': 'off',
     'prefer-numeric-literals': 'error',
     'prefer-object-spread': 'error',
     'prefer-promise-reject-errors': 'error',
